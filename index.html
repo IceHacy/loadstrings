@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .box {
+            border: 2px solid #000;
+            border-radius: 10px;
+            padding: 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" onclick="copyToClipboard('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source')">TestCopyable</div>
+
+    <script>
+        function copyToClipboard(text) {
+            var input = document.createElement('input');
+            input.value = text;
+            document.body.appendChild(input);
+            input.select();
+            document.execCommand('copy');
+            document.body.removeChild(input);
+            alert('Link copied to clipboard: ' + text);
+        }
+    </script>
+</body>
+</html>
