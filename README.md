@@ -2,6 +2,7 @@
 
 
 Basically will contain loadstrings for the scripts im making :3
+^^ I'll provide other things too
 
 ok
 
